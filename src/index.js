@@ -9,9 +9,7 @@ function validate() { // Esta función es para que el botón funcione
     
     if (result) {
         alert ("Valid credit card! :)")
-    }
-        
-    else {
+    } else {
         alert ("Invalid credit card :(")
     }
 }
