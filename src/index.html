@@ -4,10 +4,42 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    
+    
   </head>
-  <body>
-    <header></header>
-    <main></main>
+
+    <body class="background">
+      <h1>Colorful notes</h1>
+      <main>
+
+        <br>
+
+      <div class="Paymentbox">
+        <div class="content">
+          <div class="content-text">
+            <p> Select a payment method: </p>
+            <hr>
+            <div align="left"> <input type="radio" value="Paypal option" name="Paypal" id="paypal_option"/>Paypal</p></div>
+            <hr>
+            <div align="left"> <input type="radio" value="Credit or debit card option" name="Credit or debit card" id="credit_debit_card"/>Credit or debit card</p></div>
+            <div align="center"> <input type="number" name="Number" id="card_number" required placeholder="Card number" class="miinput" style="border-radius: 10px"/></div>
+            <br>
+            <input type="text" placeholder="mm/yy" class="miinput2" style="border-radius: 10px"/>
+            <span class="input-group-addon"> </span>
+            <input type="text" placeholder="CVV" class="miinput3" style="border-radius: 10px"/>
+            <span class="input-group-addon"> </span>
+            <div align="right"><button type="submit" id="ClickValidate" style="border: white 1px dashed; font-size: 11pt; font-family: Georgia; background-color: rgb(122, 214, 221); border-radius: 7px; height: 35px">Validate card</button></div>
+            <hr>
+            <div align="right"><button type="submit" onclick="ClickPay()" style="border: white 1px dashed; font-size: 11pt; font-family: Georgia; background-color: rgb(122, 214, 221); border-radius: 7px; height: 35px">Pay now</button></div>
+          </div>
+        </div>
+      </div>
+      
+
+        
+
+
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>

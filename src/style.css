@@ -1,0 +1,67 @@
+html{
+    height: auto;
+    width: auto;
+}
+
+.background{
+    background-image: linear-gradient(to right, rgb(157, 216, 134), rgb(137, 211, 183), rgb(133, 167, 212), rgb(185, 113, 226), rgb(221, 136, 179));
+
+}
+
+h1{
+    text-align: center;
+    font-size: 32pt;
+    font-family: cursive;
+    color: rgb(133, 26, 143);
+    text-shadow: white;
+    
+    text-decoration: white wavy underline;
+   
+    
+}
+
+p{
+    text-align: center;
+    font-family: Georgia;
+    font-size: 14pt;
+}
+
+.Paymentbox{
+    background: rgb(185, 131, 192);
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: Georgia;
+    border-radius: 50px;
+    display: flex;
+    margin: auto;
+    max-width: fit-content;
+    padding: 75px;
+    border: 5px solid white;    
+}
+
+
+.miinput{
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-style: dashed;
+}
+
+
+.miinput2{
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-style: dashed;
+ }
+
+
+.miinput3{
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-style: dashed;
+}

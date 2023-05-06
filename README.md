@@ -394,7 +394,8 @@ Debes realizar un :fork_and_knife:
 4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
    tu _fork_ a tu computadora (copia local).
 5. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
+   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs
+   .npmjs.com/)).
 6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
    pruebas unitarias (unit tests) con el comando `npm test`.
 7. Para ver la interfaz de tu programa en el navegador, usa el comando
