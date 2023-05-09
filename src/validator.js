@@ -1,94 +1,35 @@
 const validator = {
-  
-  isValid: function (value_card_number) { // Está escrita de esta manera porque está dentro de un objeto. 
     
-
-    value_card_number = [
-      value_card_number[15], 
-      value_card_number[14],
-      value_card_number[13], 
-      value_card_number[12], 
-      value_card_number[11], 
-      value_card_number[10], 
-      value_card_number[9], 
-      value_card_number[8], 
-      value_card_number[7], 
-      value_card_number[6], 
-      value_card_number[5], 
-      value_card_number[4], 
-      value_card_number[3], 
-      value_card_number[2], 
-      value_card_number[1], 
-      value_card_number[0]]
-
-    value_card_number[0] = value_card_number[0]*1
-    value_card_number[1] = value_card_number[1]*2  
-    value_card_number[2] = value_card_number[2]*1
-    value_card_number[3] = value_card_number[3]*2
-    value_card_number[4] = value_card_number[4]*1
-    value_card_number[5] = value_card_number[5]*2
-    value_card_number[6] = value_card_number[6]*1
-    value_card_number[7] = value_card_number[7]*2
-    value_card_number[8] = value_card_number[8]*1
-    value_card_number[9] = value_card_number[9]*2
-    value_card_number[10] = value_card_number[10]*1
-    value_card_number[11] = value_card_number[11]*2  
-    value_card_number[12] = value_card_number[12]*1
-    value_card_number[13] = value_card_number[13]*2
-    value_card_number[14] = value_card_number[14]*1
-    value_card_number[15] = value_card_number[15]*2
-    
+  isValid: function (value_card_number) { // Está escrita de esta manera porque está dentro de un objeto
+    value_card_number = value_card_number.split("");
 
 
-    if (value_card_number[1]>9)
-      value_card_number[1] = value_card_number[1]-9
+    for (let a = 0; a < value_card_number.length / 2; a++){
+      const lastPosition = value_card_number.length - 1;
+      const z = lastPosition - a; // restar la variable "a" es para indicar que vamos para atrás según lo que valga "a" en cada iteración, para ir recorriéndonos hacia el centro
 
-    if (value_card_number[3]>9)
-      value_card_number[3] = value_card_number[3]-9
+      const lastValue = value_card_number[z];
+      value_card_number[z] = value_card_number[a];
+      value_card_number[a] = lastValue;
+    }
 
-    if (value_card_number[5]>9)
-      value_card_number[5] = value_card_number[5]-9
+    for (let i = 1; i < value_card_number.length; i = i+2){
+      value_card_number[i] = Number(value_card_number[i])*2;
+      
+      if (value_card_number[i]>9){
+        value_card_number[i] = value_card_number[i]-9;
+      }
+    }
 
-    if (value_card_number[7]>9)
-      value_card_number[7] = value_card_number[7]-9
+    let Total = 0
 
-    if (value_card_number[9]>9)
-      value_card_number[9] = value_card_number[9]-9
+    for (let a = 0; a < value_card_number.length; a++){
+      value_card_number[a] = Number(value_card_number[a])
+      Total = Total + value_card_number[a];
+    }
 
-    if (value_card_number[11]>9)
-      value_card_number[11] = value_card_number[11]-9
-
-    if (value_card_number[13]>9)
-      value_card_number[13] = value_card_number[13]-9
-    
-    if (value_card_number[15]>9)
-      value_card_number[15] = value_card_number[15]-9
-
-
-
-    let Suma = 
-    value_card_number[0] +
-    value_card_number[1] + 
-    value_card_number[2] +
-    value_card_number[3] + 
-    value_card_number[4] +
-    value_card_number[5] + 
-    value_card_number[6] +
-    value_card_number[7] + 
-    value_card_number[8] +
-    value_card_number[9] + 
-    value_card_number[10] +
-    value_card_number[11] +
-    value_card_number[12] +
-    value_card_number[13] +
-    value_card_number[14] +
-    value_card_number[15]
-    
-    return Suma%10 == 0;
-    
-  }
-    
-
+    return Total%10 === 0;
+  },
 
 
 };
