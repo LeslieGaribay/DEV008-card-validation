@@ -11,27 +11,23 @@ function validate() { // Esta función es para que el botón funcione
         
     
   const result = validator.isValid(value_card_number) // Esto es la llamada a una función (que está en el validator). La variable y el parámetro se llaman igual porque así quise, pero no es necesario que lleven el mismo nombre
-  // El split es para dividir cada número en un elemento. Si no se pone el split, es una cadena. Con el split se convierte en arreglo (para poder cambiar el valor)
     
   
-
-
   if (result) {
-    alert("Valid credit card! :)")
+    input_card_number.value = validator.maskify(value_card_number);
     console.log("Valid credit card")
+    alert("Valid credit card! :)")
   } else {
-    alert("Invalid credit card :(")
     console.log("Invalid credit card")
+    alert("Invalid credit card :(")
 
   }
 
 }
 
-
-
 document.getElementById("ClickValidate").addEventListener("click", validate); // addEventListener: dos parámetros, el evento del click y una función (la de arriba)
 
 
-
+validator.maskify("012345678")
 
 
