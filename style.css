@@ -1,0 +1,173 @@
+html{
+    height: auto;
+    width: auto;
+}
+
+.background{
+    background-image: linear-gradient(to right, rgb(157, 216, 134), rgb(137, 211, 183), rgb(133, 167, 212), rgb(185, 113, 226), rgb(221, 136, 179));
+
+}
+
+h1{
+    text-align: center;
+    font-size: 32pt;
+    font-family: cursive;
+    color: rgb(133, 26, 143);
+    text-shadow: white;
+    
+    text-decoration: white wavy underline;   
+}
+
+h3{
+    text-align: center;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: white;
+}
+
+
+.Markers{
+    justify-content: center;
+    background: white;
+    border-radius: 50px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 250px;
+    min-width: 250px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.Postit{
+    justify-content: center;
+    background: white;
+    border-radius: 50px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 250px;
+    min-width: 250px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.Washitape{
+    justify-content: center;
+    background: white;
+    border-radius: 50px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 250px;
+    min-width: 250px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.Polka{
+    justify-content: center;
+    background: white;
+    border-radius: 50px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 250px;
+    min-width: 250px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.Scrapbook{
+    justify-content: center;
+    background: white;
+    border-radius: 50px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 250px;
+    min-width: 250px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+p{
+    text-align: center;
+    font-family: Georgia;
+}
+
+main p {
+    font-size: 12pt;
+}
+
+.Paymentbox{
+    background: rgb(185, 131, 192);
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: Georgia;
+    border-radius: 50px;
+    display: flex;
+    margin: auto;
+    max-width: fit-content;
+    padding: 75px;
+    border: 5px solid white;    
+}
+
+
+.content-text{
+    font-size: 12pt;
+}
+
+
+.miinput{
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-style: dashed;
+}
+
+
+.miinput2{
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-style: dashed;
+ }
+
+
+.miinput3{
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-style: dashed;
+}
+
+.quantity{
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-style: dashed;
+}
+
+footer{
+    font-size: 0.75rem;
+}
