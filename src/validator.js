@@ -33,16 +33,17 @@ const validator = {
 
 
 
-  maskify: function (value_card_number){
+
+  maskify: function (value_card_number) {
     const lastPosition = value_card_number.length - 1;
 
-    let maskified="" //Cadena vacía, se va a ir construyendo al iterar, sustituyendo el valor del número por el #
-    for (let o = 0; o < value_card_number.length; o++){
-        if (o > lastPosition - 4){
-          maskified = maskified + value_card_number[o];  // maskified es el resultado que llevamos hasta el momento. Maskified lleva toda la cola de valores
-        } else {
-          maskified = maskified + "#";
-        }
+    let maskified = "" //Cadena vacía, se va a ir construyendo al iterar, sustituyendo el valor del número por el #
+    for (let o = 0; o < value_card_number.length; o++) {
+      if (o > lastPosition - 4) {
+        maskified = maskified + value_card_number[o];  // maskified es el resultado que llevamos hasta el momento. Maskified lleva toda la cola de valores
+      } else {
+        maskified = maskified + "#";
+      }
     }
 
     return maskified;

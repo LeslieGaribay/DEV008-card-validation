@@ -27,7 +27,12 @@ function validate() { // Esta función es para que el botón funcione
 
 document.getElementById("ClickValidate").addEventListener("click", validate); // addEventListener: dos parámetros, el evento del click y una función (la de arriba)
 
+document.getElementById("ClickPay").addEventListener("click", pay);
 
-validator.maskify("012345678")
+function pay (){ 
+  alert("Enjoy your purchase!") 
+}
+
+
 
 
