@@ -14,7 +14,7 @@ const validator = {
     }
 
     for (let i = 1; i < value_card_number.length; i = i+2){ // i+2 = Para irnos de dos en dos
-      value_card_number[i] = Number(value_card_number[i])*2; // aquí es una cadena y se convierte a número
+      value_card_number[i] = Number(value_card_number[i])*2;
       
       if (value_card_number[i]>9){
         value_card_number[i] = value_card_number[i]-9;
